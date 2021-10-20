@@ -1,3 +1,45 @@
+:root {
+  --primary-color: rgba(0, 0, 0, 1);
+  --secondary-color: rgba(32, 32, 32, 1);
+  --button-font-color: rgba(39, 33, 66, 1);
+  --detail-color: rgba(246, 82, 130, 1);
+  --font-color: rgba(255, 255, 255, 1);
+  --primary-font: "Roboto";
+  --secondary-font: "Montserrat";
+  --button-padding: 18px 30px;
+}
+body {
+  background-color: var(--secondary-color);
+}
 h1 {
-  font-family: "Roboto", sans-serif;
+  font-size: 72px;
+}
+.hero {
+  background-color: var(--secondary-color);
+  font-family: var(--primary-font);
+  line-height: 1.5;
+  font-weight: bold;
+  color: var(--font-color);
+  text-align: left;
+  margin: 100px 150px;
+}
+.caption {
+  font-size: 22px;
+}
+.highlight {
+  color: var(--detail-color);
+}
+.btn-branding {
+  margin: 10px 20px 10px 0;
+  background-color: var(--font-color) !important;
+  color: var(--button-font-color) !important;
+  text-transform: uppercase;
+  padding: var(--button-padding);
+  border-radius: 50px;
+  font-family: var(--secondary-font);
+  font-weight: bold;
+  font-size: 14px;
+}
+.btn-branding:hover {
+  color: var(--detail-color) !important;
 }
