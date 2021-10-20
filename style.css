@@ -14,6 +14,15 @@ body {
 h1 {
   font-size: 72px;
 }
+h2,
+h3 {
+  font-size: 40px;
+  color: var(--detail-color);
+}
+
+p {
+  color: var(--font-color);
+}
 .hero {
   background-color: var(--secondary-color);
   font-family: var(--primary-font);
@@ -29,7 +38,8 @@ h1 {
 .highlight {
   color: var(--detail-color);
 }
-.btn-branding {
+.btn-branding,
+.btn-branding-outline {
   margin: 10px 20px 10px 0;
   background-color: var(--font-color) !important;
   color: var(--button-font-color) !important;
@@ -42,4 +52,29 @@ h1 {
 }
 .btn-branding:hover {
   color: var(--detail-color) !important;
+}
+.project-description {
+  padding: 120px 60px;
+}
+@media (max-width: 900px) {
+  h1 {
+    font-size: 40px;
+    line-height: 1;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .hero {
+    margin: 0;
+  }
+  .caption {
+    text-align: center;
+  }
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
 }
