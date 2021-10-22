@@ -9,31 +9,118 @@
   --button-padding: 18px 30px;
 }
 body {
-  background-color: var(--secondary-color);
+  background: linear-gradient(
+    187deg,
+    rgb(255, 255, 255) 0%,
+    rgb(255, 255, 255) 0%,
+    rgb(255, 255, 255) 0%,
+    rgb(32, 32, 32) 100%
+  );
 }
 h1 {
   font-size: 72px;
+  color: var(--font-color);
+  text-shadow: 1px 1px 1px var(--primary-color);
 }
 h2,
 h3 {
   font-size: 40px;
+  color: var(--font-color);
+  text-shadow: 1px 1px 1px var(--primary-color);
+}
+h4 {
+  color: var(--font-color);
+  font-size: 25px;
+  text-shadow: 1px 1px 1px var(--primary-color);
+}
+p {
+  color: var(--font-color);
+  text-shadow: 1px 1px 1px var(--primary-color);
+}
+nav {
+  padding: 20px 0;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: all 100ms ease-in-out;
+}
+div a {
+  text-decoration: none;
+}
+nav a:hover,
+nav li.active a {
+  color: var(--detail-color);
+}
+div footer {
+  margin: 60px 0;
+}
+
+footer .contact-box {
+  background: var(--primary-color);
+  padding: 30px 120px;
+  border-radius: 10px;
+}
+
+footer .contact-box p {
+  margin: 0;
+}
+
+footer .email-link {
+  text-decoration: none;
+  color: var(--font-color);
+  font-size: 24px;
+}
+
+footer .email-link:hover {
   color: var(--detail-color);
 }
 
-p {
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--detail-color);
+  background: var(--secondary-color);
+  padding: 10px 14px;
+  border-radius: 10%;
+  font-size: 18px;
+  transition: all 100ms ease-in-out;
+}
+
+footer .social-links a:hover {
   color: var(--font-color);
+  background: var(--detail-color);
+}
+img {
+  width: 550px;
+  border: 5px solid var(--font-color);
+  border-radius: 10px;
 }
 .hero {
-  background-color: var(--secondary-color);
+  background-image: url(/images/undraw_dreamer_gxxi.svg);
+  background-size: 100% 100%;
+  padding: 50px 80px 50px 150px;
   font-family: var(--primary-font);
   line-height: 1.5;
   font-weight: bold;
   color: var(--font-color);
   text-align: left;
-  margin: 100px 150px;
 }
 .caption {
   font-size: 22px;
+  text-shadow: 1px 1px 1px var(--primary-color);
 }
 .highlight {
   color: var(--detail-color);
@@ -50,7 +137,8 @@ p {
   font-weight: bold;
   font-size: 14px;
 }
-.btn-branding:hover {
+.btn-branding:hover,
+.btn-branding-outline:hover {
   color: var(--detail-color) !important;
 }
 .project-description {
@@ -59,22 +147,61 @@ p {
 @media (max-width: 900px) {
   h1 {
     font-size: 40px;
-    line-height: 1;
+    line-height: 1, 5;
     text-align: center;
   }
 
   h2 {
     font-size: 40px;
     text-align: center;
+    text-shadow: 1px 1px 1px var(--primary-color);
+  }
+  .btn-branding,
+  .btn-branding-outline {
+    font-size: 10px;
+    padding: 5px 10px;
+    border-radius: 20px;
   }
   .hero {
+    padding: 100px 50px;
     margin: 0;
   }
   .caption {
     text-align: center;
   }
+
   .project-description {
     padding: 0;
     text-align: center;
   }
+}
+
+.about-section {
+  padding: 160px 50px;
+}
+.about-caption {
+  background-image: url(/images/undraw_Portfolio_update_re_jqnp.svg);
+  background-size: 100% 100%;
+}
+.logo {
+  font-size: 32px;
+  font-weight: 900;
+  color: var(--primary-color);
+}
+.logo:hover {
+  color: var(--detail-color);
+}
+.personal-photo {
+  border-radius: 10px;
+  width: 390px;
+}
+.accounts {
+  margin: 120px;
+}
+.accounts a {
+  color: var(--primary-color);
+}
+.contact-page {
+  background-image: url(/images/undraw_Begin_chat_re_v0lw.svg);
+  background-size: 100% 100%;
 }
