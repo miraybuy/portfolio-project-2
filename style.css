@@ -19,8 +19,9 @@ body {
 }
 h1 {
   font-size: 72px;
+
   color: var(--font-color);
-  text-shadow: 1px 1px 1px var(--primary-color);
+  text-shadow: 2px 2px 2px var(--primary-color);
 }
 h2,
 h3 {
@@ -29,18 +30,17 @@ h3 {
   text-shadow: 1px 1px 1px var(--primary-color);
 }
 h4 {
-  color: var(--primary-color);
+  color: var(--font-color);
   font-size: 25px;
-  text-shadow: 1px 1px 1px var(--font-color);
+  text-shadow: 1px 1px 1px var(--primary-color);
 }
 
 p {
   color: var(--primary-color);
-  font-size: 20px;
 }
 
 nav {
-  padding: 20px 0;
+  padding: 30px 0;
 }
 
 nav ul {
@@ -97,7 +97,7 @@ footer .social-links a {
   background: var(--primary-color);
   padding: 10px 14px;
   border-radius: 10%;
-  font-size: 18px;
+  font-size: 26px;
   transition: all 100ms ease-in-out;
 }
 
@@ -121,8 +121,9 @@ img {
   text-align: left;
 }
 .caption {
-  font-size: 22px;
-  text-shadow: 1px 1px 1px var(--font-color);
+  color: var(--font-color);
+  text-shadow: 1px 1px 1px var(--primary-color);
+  font-size: 23px;
 }
 .highlight {
   color: var(--detail-color);
@@ -130,8 +131,8 @@ img {
 .btn-branding,
 .btn-branding-outline {
   margin: 10px 20px 10px 0;
-  background-color: var(--font-color) !important;
-  color: var(--button-font-color) !important;
+  background-color: var(--font-color);
+  color: var(--button-font-color);
   text-transform: uppercase;
   padding: var(--button-padding);
   border-radius: 50px;
@@ -141,30 +142,31 @@ img {
 }
 .btn-branding:hover,
 .btn-branding-outline:hover {
-  color: var(--detail-color) !important;
+  color: var(--detail-color);
 }
 .project-description {
-  padding: 120px 60px;
+  padding: 18px 60px;
 }
-
+.project-description p {
+  font-weight: bold;
+}
 .about-section {
   padding: 120px 50px;
 }
-.about-caption {
+.about-caption p {
   background-image: url(/images/undraw_Begin_chat_re_v0lw.svg);
   background-size: 100% 100%;
   font-size: 25px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px var(--font-color);
 }
 .personal-photo {
   border-radius: 10px;
   width: 390px;
 }
 .logo {
-  font-size: 32px;
+  font-size: 40px;
   font-weight: 900;
-  color: var(--primary-color);
-}
-.logo:hover {
   color: var(--detail-color);
 }
 
@@ -176,9 +178,9 @@ img {
 .accounts a {
   color: var(--font-color);
   font-size: 28px;
+  text-shadow: 1px 1px 1px var(--primary-color);
 }
-.contact-page {
-}
+
 @media (max-width: 900px) {
   body {
     margin: 0;
@@ -228,5 +230,8 @@ img {
   }
   .accounts {
     margin: 0;
+  }
+  .about-section {
+    text-align: center;
   }
 }
